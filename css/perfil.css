@@ -1,0 +1,215 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 30%, #FF0000 50%, #FFFFFF 70%, #FFFFFF 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.perfil-header h1 {
+  color: #d50000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #00000055;
+}
+
+.btn-volver,
+.btn-logout {
+  background: #d50000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-volver:hover,
+.btn-logout:hover {
+  background: #a00000;
+}
+
+.mensaje {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mensaje.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.mensaje.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.perfil-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-sidebar {
+  text-align: center;
+}
+
+.foto-perfil-container {
+  margin-bottom: 25px;
+}
+
+.foto-perfil-grande {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d50000;
+}
+
+.foto-perfil-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #d50000;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.info-usuario h2 {
+  font-size: 1.6rem;
+  color: #222;
+}
+
+.usuario-nombre {
+  color: #d50000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  color: #444;
+  font-style: italic;
+  font-size: 0.95rem;
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.perfil-contenido form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.seccion {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.seccion h3 {
+  color: #d50000;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d50000;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.botones-accion {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+button[type="submit"] {
+  background: #d50000;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #a00000;
+}
+
+a {
+  text-decoration: none;
+  color: #d50000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.info-datos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.info-datos p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.info-datos strong {
+  color: #111;
+}
+

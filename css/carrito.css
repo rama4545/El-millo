@@ -1,0 +1,160 @@
+.carrito-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrito-lateral.visible {
+  transform: translateX(0);
+}
+
+.carrito-header {
+  background-color: #c4001d;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #a80019;
+}
+
+.carrito-resumen {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.carrito-total {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.carrito-resumen h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #c4001d;
+  font-weight: bold;
+}
+
+.carrito-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  align-items: flex-start;
+}
+
+.carrito-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.carrito-item-detalle {
+  flex: 1;
+  font-size: 13px;
+}
+
+.carrito-item-detalle h4 {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.carrito-item-detalle p {
+  margin: 1px 0;
+  color: #555;
+}
+
+.btn-eliminar {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #c4001d;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+
+.carrito-total {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+  text-align: center;
+}
+
+.carrito-total h3 {
+  margin: 0 0 0.4rem;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.carrito-total span {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.btn-iniciar, .btn-vaciar {
+  display: block;
+  background-color: #c4001d;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-iniciar:hover, .btn-vaciar:hover {
+  background-color: #a80019;
+}
+
+.btn-vaciar {
+  background-color: #333;
+}
+
+.btn-iniciarsesion {
+    background-color: #c70000;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+  }
+  
+  .btn-iniciarsesion:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+  }

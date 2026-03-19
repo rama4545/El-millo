@@ -1,0 +1,89 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(129.35deg, #FFFFFF 27.47%, #FF0000 51.63%, #FFFFFF 75.78%);     
+            padding: 20px;
+        }
+
+        .iniciar-sesion {
+            background: white;
+            padding: 30px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 120px; 
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #333;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .requerimiento {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        .contraseña {
+            display: block;
+            text-align: left;
+            color: #ff0000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 10px 0 15px;
+        }
+
+        .login {
+            width: 100%;
+            padding: 12px;
+            background: #ff0000;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+.mensaje-error {
+    background-color: #ffe0e0;
+    color: #b30000;
+    border: 1px solid #ff4d4d;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(112, 87, 87, 0.1);
+}
